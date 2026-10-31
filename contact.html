@@ -1,61 +1,103 @@
-<h2>Follow Me on TikTok</h2>
-
-<p>Let's connect on TikTok!</p>
-
-<a class="tiktok-button"
-   href="https://www.tiktok.com/@pujalama03"
-   target="_blank"
-   rel="noopener noreferrer">
-    ♪ Follow Me on TikTok
-</a><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Portfolio</title>
+    <title>Contact | Puja's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <h2>My Portfolio</h2>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-    <a href="information.html">Information</a>
+<nav class="navbar">
+    <a class="logo" href="index.html">✦ Puja's Space</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="contact.html">Contact</a>
+        <a href="information.html">Information</a>
+    </div>
 </nav>
 
 <main>
-    <h1>Contact Me</h1>
-    <p>Feel free to contact me!</p>
+    <section class="page-header">
+        <span class="eyebrow">LET'S CONNECT</span>
+        <h1>Contact Me ♡</h1>
+        <p>
+            Have a question or want to say hello?
+            I'd love to hear from you!
+        </p>
+    </section>
 
-    <div class="contact-box">
-        <p>Email: student@example.com</p>
-        <p>Location: Nepal</p>
+    <section class="section">
+        <div class="contact-layout">
 
-        <h2>Send a Message</h2>
+            <div class="contact-card">
+                <h2>Let's Be Friends ✨</h2>
+                <p>
+                    Feel free to connect with me
+                    through my social media.
+                </p>
 
-        <form>
-            <label for="name">Puja Tamang:</label>
-            <input type="text" id="@pujalama03"
-                   placeholder="@pujalama03" required>
+                <div class="detail">
+                    <h3>✦ PujaTamang</h3>
+                    <p>Puja</p>
+                </div>
 
-            <label for="email">janakitamang66789@gmail.com:</label>
-            <input type="email" id="email"
-                   placeholder="janakitamang66789" required>
+                <div class="detail">
+                    <h3>✦ My Location</h3>
+                    <p>Nepal</p>
+                </div>
 
-            <label for="message">follow me in tiktok:</label>
-            <textarea id="message" rows="5"
-                      placeholder="Write your message"
-                      required></textarea>
+                <div class="detail">
+                    <h3>✦ My TikTok</h3>
+                    <p>Follow my journey and videos!</p>
+                </div>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
+                <a class="tiktok-button"
+                   href="https://www.tiktok.com/@pujalama03"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ♪ Follow Me on TikTok
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h2>Send a Message ♡</h2>
+                <p>Write your message below.</p>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name"
+                           placeholder="Puja Tamang"
+                           required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email"
+                           placeholder="janakitamang66789@gmail.com"
+                           required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5"
+                              placeholder="Hi!welcome to my website💜"
+                              required></textarea>
+
+                    <button type="button" class="btn">
+                        Send Message ♡
+                    </button>
+                </form>
+
+                <p class="form-note">
+                    This form is a design demonstration only.
+                </p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2026 My Portfolio</p>
+    <h3>✦ Puja's Space</h3>
+    <p>Let's stay connected ♡</p>
+    <p>© 2026 Puja's Portfolio. All rights reserved.</p>
 </footer>
 
 </body>
