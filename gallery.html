@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - My Portfolio</title>
+    <title>Gallery | Puja's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <h2>My Portfolio</h2>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-    <a href="information.html">Information</a>
+<nav class="navbar">
+    <a class="logo" href="index.html">✦ Puja's Space</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="information.html">Information</a>
+    </div>
 </nav>
 
 <main>
-    <h1>My Photo Gallery</h1>
-    <p>Welcome to my personal gallery!</p>
+    <section class="page-header">
+        <span class="eyebrow">PRECIOUS MOMENTS</span>
+        <h1>My Gallery ♡</h1>
+        <p>
+            A collection of my favourite pictures
+            and beautiful memories.
+        </p>
+    </section>
 
-    <div class="gallery">
-        <img src="photo1.jpg" alt="My Photo" width="300">>
-        <img src="photo2.jpg" alt="My Photo" width="300">
-        <img src="photo3.jpg" alt="My Photo" Width="300">
-        <img src="photo4.jpg" alt="My Photo" Width="300">
-    </div>
+    <section class="section">
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="photo1.jpg" alt="My first photo">
+            </div>
+
+            <div class="photo-card">
+                <img src="photo2.jpg" alt="My second photo">
+            </div>
+
+            <div class="photo-card">
+                <img src="photo3.jpg" alt="My third photo">
+                <p>My Favourite Picture ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="photo4.jpg" alt="My fourth photo">
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2026 My Portfolio</p>
+    <h3>✦ Puja's Space</h3>
+    <p>© 2026 Puja's Portfolio. All rights reserved.</p>
 </footer>
 
 </body>
