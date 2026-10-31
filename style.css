@@ -1,87 +1,141 @@
- grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 800px;
-    margin: 30px auto;
+/* General Design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+    color: #1e293b;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #0f172a, #2563eb);
+    padding: 20px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+/* Main Content */
+main {
+    min-height: 65vh;
+    padding: 60px 20px;
+}
+
+main h1 {
+    font-size: 38px;
+    color: #1d4ed8;
+}
+
+main p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 35px auto;
 }
 
 .gallery img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px #cccccc;
-}
-
-/* Contact Page */
-.contact-box {
-    background: white;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px #dddddd;.tiktok-button {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 15px;
-    border: 2px solid #ff0050;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px #0002;
     transition: 0.3s;
 }
 
-.tiktok-button:hover {
-    background-color: #ff0050;
-    color: white;
-    transform: scale(1.05);
-}
+.gallery img:hover {
+    transform: scale(1.04);
 }
 
-.contact-box label {
-    display: block;
-    text-align: left;
-    margin-top: 15px;
-}
-
-.contact-box input,
-.contact-box textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-}
-
-.contact-box button {
-    background: #1e3a8a;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    margin-top: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-box button:hover {
-    background: #2563eb;
-}
-
-/* Information Page */
-.info-box {
-    background: white;
+/* Information Box */
+.info-box,
+.contact-box {
     max-width: 700px;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px #dddddd;
+    margin: 30px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #0002;
 }
 
 .info-box h2 {
-    color: #1e3a8a;
+    color: #2563eb;
+}
+
+/* Contact Form */
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 12px auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* TikTok Button */
+.tiktok-button {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #ff0050;
+    margin: 20px;
+}
+
+.tiktok-button:hover {
+    background: #ff0050;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: white;
+    padding: 25px;
 }
 
 /* Mobile Responsive */
@@ -90,46 +144,11 @@
         grid-template-columns: 1fr;
     }
 
-    main {
-        padding: 30px 15px;
+    main h1 {
+        font-size: 28px;
     }
-}body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f4f8;
-}
 
-nav {
-    background-color: #1e3a8a;
-    padding: 20px;
-    color: white;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 80px 20px;
-    min-height: 250px;
-}
-
-footer {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 15px;
-}
-
-@media (max-width: 600px) {
     nav a {
-        display: inline-block;
-        margin: 8px;
+        padding: 8px;
     }
 }
